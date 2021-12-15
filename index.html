@@ -6,7 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VERYVERY</title>
   <link href="css/reset.css" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/swiper.css" rel="stylesheet">
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 30,
+      });
+    });
+  </script>
 </head>
 <body>
   <div id="wrap">
@@ -46,78 +60,81 @@
           <h3><a href="#"><span class="m_arr">새로 나온 노래</span></a></h3>
         </div><!--.tit-->
         <div class="new_list">
-          <ul>
-            <li class="clear">
-              <div class="albumart radius15">
-                <a href="#"><img src="img/new01.jpg" alt="앨범아트 이미지"></a>
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide newlistS">
+                <div class="albumart radius15">
+                  <a href="#"><img src="img/new01.jpg" alt="앨범아트 이미지"></a>
+                </div>
+                <div class="txt_box">
+                  <p class="song_tit"><a href="#">Colorful</a></p>
+                  <p class="name"><a href="#">이민규</a></p>
+                  <p class="date">2021. 10. 20</p>
+                </div>
               </div>
-              <div class="txt_box">
-                <p class="song_tit"><a href="#">Colorful</a></p>
-                <p class="name"><a href="#">이민규</a></p>
-                <p class="date">2021. 10. 20</p>
+              <div class="swiper-slide">
+                <div class="albumart radius15">
+                  <a href="#"><img src="img/new02.jpg" alt="앨범아트 이미지"></a>
+                </div>
+                <div class="txt_box">
+                  <p class="song_tit"><a href="#">지금 하늘 봐</a></p>
+                  <p class="name"><a href="#">이하늘</a></p>
+                  <p class="date">2021. 10. 20</p>
+                </div>
               </div>
-            </li>
-            <li class="clear">
-              <div class="albumart radius15">
-                <a href="#"><img src="img/new02.jpg" alt="앨범아트 이미지"></a>
+              <div class="swiper-slide">
+                <div class="albumart radius15">
+                  <a href="#"><img src="img/new09.jpg" alt="앨범아트 이미지"></a>
+                </div>
+                <div class="txt_box">
+                  <p class="song_tit"><a href="#">Dreamcatcher</a></p>
+                  <p class="name"><a href="#">문완기</a></p>
+                  <p class="date">2021. 10. 20</p>
+                </div>
               </div>
-              <div class="txt_box">
-                <p class="song_tit"><a href="#">지금 하늘 봐</a></p>
-                <p class="name"><a href="#">이하늘</a></p>
-                <p class="date">2021. 10. 20</p>
+              <div class="swiper-slide">
+                <div class="albumart radius15">
+                  <a href="#"><img src="img/new10.jpg" alt="앨범아트 이미지"></a>
+                </div>
+                <div class="txt_box">
+                  <p class="song_tit"><a href="#">너의 모든 게 사랑스러워</a></p>
+                  <p class="name"><a href="#">카페모카</a></p>
+                  <p class="date">2021. 10. 20</p>
+                </div>
               </div>
-            </li>
-            <li class="clear">
-              <div class="albumart radius15">
-                <a href="#"><img src="img/new09.jpg" alt="앨범아트 이미지"></a>
+              <div class="swiper-slide">
+                <div class="albumart radius15">
+                  <a href="#"><img src="img/new05.jpg" alt="앨범아트 이미지"></a>
+                </div>
+                <div class="txt_box">
+                  <p class="song_tit"><a href="#">콜리</a></p>
+                  <p class="name"><a href="#">MC 스나이퍼(MC Sniper)</a></p>
+                  <p class="date">2021. 10. 20</p>
+                </div>
               </div>
-              <div class="txt_box">
-                <p class="song_tit"><a href="#">Dreamcatcher</a></p>
-                <p class="name"><a href="#">문완기</a></p>
-                <p class="date">2021. 10. 20</p>
+              <div class="swiper-slide">
+                <div class="albumart radius15">
+                  <a href="#"><img src="img/new06.jpg" alt="앨범아트 이미지"></a>
+                </div>
+                <div class="txt_box">
+                  <p class="song_tit"><a href="#">떠났다</a></p>
+                  <p class="name"><a href="#">Crying Tigers</a></p>
+                  <p class="date">2021. 10. 20</p>
+                </div>
               </div>
-            </li>
-            <li class="clear">
-              <div class="albumart radius15">
-                <a href="#"><img src="img/new10.jpg" alt="앨범아트 이미지"></a>
+              <div class="swiper-slide">
+                <div class="albumart radius15">
+                  <a href="#"><img src="img/new07.jpg" alt="앨범아트 이미지"></a>
+                </div>
+                <div class="txt_box">
+                  <p class="song_tit"><a href="#">이 순간</a></p>
+                  <p class="name"><a href="#">그들이 기획한</a></p>
+                  <p class="date">2021. 10. 20</p>
+                </div>
               </div>
-              <div class="txt_box">
-                <p class="song_tit"><a href="#">너의 모든 게 사랑스러워</a></p>
-                <p class="name"><a href="#">카페모카</a></p>
-                <p class="date">2021. 10. 20</p>
-              </div>
-            </li>
-            <li class="clear">
-              <div class="albumart radius15">
-                <a href="#"><img src="img/new05.jpg" alt="앨범아트 이미지"></a>
-              </div>
-              <div class="txt_box">
-                <p class="song_tit"><a href="#">콜리</a></p>
-                <p class="name"><a href="#">MC 스나이퍼(MC Sniper)</a></p>
-                <p class="date">2021. 10. 20</p>
-              </div>
-            </li>
-            <li class="clear">
-              <div class="albumart radius15">
-                <a href="#"><img src="img/new06.jpg" alt="앨범아트 이미지"></a>
-              </div>
-              <div class="txt_box">
-                <p class="song_tit"><a href="#">떠났다</a></p>
-                <p class="name"><a href="#">Crying Tigers</a></p>
-                <p class="date">2021. 10. 20</p>
-              </div>
-            </li>
-            <li class="clear">
-              <div class="albumart radius15">
-                <a href="#"><img src="img/new07.jpg" alt="앨범아트 이미지"></a>
-              </div>
-              <div class="txt_box">
-                <p class="song_tit"><a href="#">이 순간</a></p>
-                <p class="name"><a href="#">그들이 기획한</a></p>
-                <p class="date">2021. 10. 20</p>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div><!--.new_list-->
       </div><!--.con1-->
 

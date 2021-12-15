@@ -1,8 +1,21 @@
 @charset "utf-8";
 
+body{
+  background-color: #000;
+}
 #wrap{
   min-width: 320px;
-  overflow: hidden;}
+  max-width: 480px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: relative;
+  background-color: #fff;
+}
+#wrap::-webkit-scrollbar{
+  display: none;
+}
 
 header{
   width: 100%;
@@ -120,24 +133,11 @@ font-size: 0;
   background: url(../img/more_arr.png) no-repeat right center / 9px auto;
   margin-left: 7px;
 }
-.con1 .new_list{
-  white-space: nowrap;
-  overflow-x: scroll;
-}
-.con1 .new_list li{
-  display: inline-block;
-  margin-right: 5%;
-  width: 90%;
-}
-.con1 .new_list li:last-child{
-  margin-right: 0;
-}
+
 .new_list .albumart{
-  float: left;
+  /* float: left;
   width: 55%;
-  /* border-radius: 10px;
-  overflow: hidden; */
-  margin-right: 5%;
+  margin-right: 5%; */
   position: relative;
 }
 .new_list .albumart img{
@@ -514,12 +514,16 @@ footer{
   margin: 3px 0 0;
 }
 
+/* player */
+
 .player{
   background-color: #222;
+  max-width: 480px;
   width: 100%;
   height: 80px;
   position: fixed;
-  bottom: 0; left: 0;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
   min-width: 378px;
 }
