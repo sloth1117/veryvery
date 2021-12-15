@@ -12,15 +12,6 @@
   <script src="js/jquery-1.12.3.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
-  <script>
-    $(document).ready(function(){
-
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1.2,
-        spaceBetween: 30,
-      });
-    });
-  </script>
 </head>
 <body>
   <div id="wrap">
@@ -61,7 +52,7 @@
         </div><!--.tit-->
         <div class="new_list">
           <!-- Swiper -->
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiper_new">
             <div class="swiper-wrapper">
               <div class="swiper-slide newlistS">
                 <div class="albumart radius15">
@@ -73,7 +64,7 @@
                   <p class="date">2021. 10. 20</p>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide newlistS">
                 <div class="albumart radius15">
                   <a href="#"><img src="img/new02.jpg" alt="앨범아트 이미지"></a>
                 </div>
@@ -83,7 +74,7 @@
                   <p class="date">2021. 10. 20</p>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide newlistS">
                 <div class="albumart radius15">
                   <a href="#"><img src="img/new09.jpg" alt="앨범아트 이미지"></a>
                 </div>
@@ -93,7 +84,7 @@
                   <p class="date">2021. 10. 20</p>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide newlistS">
                 <div class="albumart radius15">
                   <a href="#"><img src="img/new10.jpg" alt="앨범아트 이미지"></a>
                 </div>
@@ -103,7 +94,7 @@
                   <p class="date">2021. 10. 20</p>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide newlistS">
                 <div class="albumart radius15">
                   <a href="#"><img src="img/new05.jpg" alt="앨범아트 이미지"></a>
                 </div>
@@ -113,7 +104,7 @@
                   <p class="date">2021. 10. 20</p>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide newlistS">
                 <div class="albumart radius15">
                   <a href="#"><img src="img/new06.jpg" alt="앨범아트 이미지"></a>
                 </div>
@@ -123,7 +114,7 @@
                   <p class="date">2021. 10. 20</p>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide newlistS">
                 <div class="albumart radius15">
                   <a href="#"><img src="img/new07.jpg" alt="앨범아트 이미지"></a>
                 </div>
@@ -197,74 +188,77 @@
           <h3><a href="#"><span class="m_arr">최근 들은 노래</span></a></h3>
         </div><!--.tit-->
         <div class="mylist">
-          <ul>
-            <li>
-              <div class="albumart radius15">
-                <a href="#">
-                  <div class="multiart clear">
-                    <div><img src="img/pl01_1.jpg" alt="앨범아트 이미지"></div>
-                    <div><img src="img/pl01_2.jpg" alt="앨범아트 이미지"></div>
-                    <div><img src="img/pl01_3.jpg" alt="앨범아트 이미지"></div>
-                    <div><img src="img/pl01_4.jpg" alt="앨범아트 이미지"></div>
-                  </div>
-                </a>
-              </div><!--.albumart-->
-              <div class="txt_box">
-                <strong>My Playlist</strong>
-                <span>132곡</span>
-              </div><!--.txt_box-->
-            </li>
-            <li>
-              <div class="albumart radius15">
-                <a href="#"><img src="img/pl02.jpg" alt="앨범아트 이미지"></a>
-              </div><!--.albumart-->
-              <div class="txt_box">
-                <strong>MUST</strong>
-                <span><a href="#">2PM</a></span>
-              </div><!--.txt_box-->
-            </li>
-            <li>
-              <div class="albumart radius15">
-                <a href="#"><img src="img/pl03.jpg" alt="앨범아트 이미지"></a>
-              </div><!--.albumart-->
-              <div class="txt_box">
-                <strong>forever</strong>
-                <span><a href="#">aespa</a></span>
-              </div><!--.txt_box-->
-            </li>
-            <li>
-              <div class="albumart radius15">
-                <a href="#">
-                  <div class="multiart clear">
-                    <div><img src="img/pl05_1.jpg" alt="앨범아트 이미지"></div>
-                    <div><img src="img/pl05_2.jpg" alt="앨범아트 이미지"></div>
-                    <div><img src="img/pl05_3.jpg" alt="앨범아트 이미지"></div>
-                    <div><img src="img/pl05_4.jpg" alt="앨범아트 이미지"></div>
-                  </div>
-                </a>
-              </div><!--.albumart-->
-              <div class="txt_box">
-                <strong>idol list</strong>
-                <span>37곡</span>
-              </div><!--.txt_box-->
-            </li>
-            <li>
-              <div class="albumart radius15">
-                <a href="#">
-                  <div class="multiart clear">
-                    <div><img src="img/pl06_1.jpg" alt="앨범아트 이미지"></div>
-                    <div><img src="img/pl06_2.jpg" alt="앨범아트 이미지"></div>
-                    <div><img src="img/pl06_3.jpg" alt="앨범아트 이미지"></div>
-                    <div><img src="img/pl06_4.jpg" alt="앨범아트 이미지"></div>
-                  </div>
-                </a>
-              </div><!--.albumart-->
-              <div class="txt_box">
-                <strong>play1022</strong>
-                <span>79곡</span>
-              </div><!--.txt_box-->
-            </li>
-          </ul>
+          <!-- Swiper -->
+          <div class="swiper mySwiper_my">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide mylistS">
+                <div class="albumart radius15">
+                  <a href="#">
+                    <div class="multiart clear">
+                      <div><img src="img/pl01_1.jpg" alt="앨범아트 이미지"></div>
+                      <div><img src="img/pl01_2.jpg" alt="앨범아트 이미지"></div>
+                      <div><img src="img/pl01_3.jpg" alt="앨범아트 이미지"></div>
+                      <div><img src="img/pl01_4.jpg" alt="앨범아트 이미지"></div>
+                    </div>
+                  </a>
+                </div><!--.albumart-->
+                <div class="txt_box">
+                  <strong>My Playlist</strong>
+                  <span>132곡</span>
+                </div><!--.txt_box-->
+              </div>
+              <div class="swiper-slide mylistS">
+                <div class="albumart radius15">
+                  <a href="#"><img src="img/pl02.jpg" alt="앨범아트 이미지"></a>
+                </div><!--.albumart-->
+                <div class="txt_box">
+                  <strong>MUST</strong>
+                  <span><a href="#">2PM</a></span>
+                </div><!--.txt_box-->
+              </div>
+              <div class="swiper-slide mylistS">
+                <div class="albumart radius15">
+                  <a href="#"><img src="img/pl03.jpg" alt="앨범아트 이미지"></a>
+                </div><!--.albumart-->
+                <div class="txt_box">
+                  <strong>forever</strong>
+                  <span><a href="#">aespa</a></span>
+                </div><!--.txt_box-->
+              </div>
+              <div class="swiper-slide mylistS">
+                <div class="albumart radius15">
+                  <a href="#">
+                    <div class="multiart clear">
+                      <div><img src="img/pl05_1.jpg" alt="앨범아트 이미지"></div>
+                      <div><img src="img/pl05_2.jpg" alt="앨범아트 이미지"></div>
+                      <div><img src="img/pl05_3.jpg" alt="앨범아트 이미지"></div>
+                      <div><img src="img/pl05_4.jpg" alt="앨범아트 이미지"></div>
+                    </div>
+                  </a>
+                </div><!--.albumart-->
+                <div class="txt_box">
+                  <strong>idol list</strong>
+                  <span>37곡</span>
+                </div><!--.txt_box-->
+              </div>
+              <div class="swiper-slide mylistS">
+                <div class="albumart radius15">
+                  <a href="#">
+                    <div class="multiart clear">
+                      <div><img src="img/pl06_1.jpg" alt="앨범아트 이미지"></div>
+                      <div><img src="img/pl06_2.jpg" alt="앨범아트 이미지"></div>
+                      <div><img src="img/pl06_3.jpg" alt="앨범아트 이미지"></div>
+                      <div><img src="img/pl06_4.jpg" alt="앨범아트 이미지"></div>
+                    </div>
+                  </a>
+                </div><!--.albumart-->
+                <div class="txt_box">
+                  <strong>play1022</strong>
+                  <span>79곡</span>
+                </div><!--.txt_box-->
+              </div>
+            </div>
+          </div>
         </div><!--.mylist-->
       </div><!--.con3-->
 
@@ -314,6 +308,21 @@
             <li><a href="#" class="more">장르 더보기</a></li>
           </ul>
         </div><!--.cate2-->
+        <!-- Swiper -->
+        <!-- <div class="swiper mySwiper_cate">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#">국내 발라드</a></div>
+            <div class="swiper-slide"><a href="#">국내 댄스</a></div>
+            <div class="swiper-slide"><a href="#">국내 R&B</a></div>
+            <div class="swiper-slide"><a href="#">해외 R&B</a></div>
+            <div class="swiper-slide"><a href="#">국내 힙합</a></div>
+            <div class="swiper-slide"><a href="#">해외 힙합</a></div>
+            <div class="swiper-slide"><a href="#">클래식</a></div>
+            <div class="swiper-slide"><a href="#">뉴에이지</a></div>
+            <div class="swiper-slide"><a href="#">OST</a></div>
+            <div class="swiper-slide"><a href="#" class="more">장르 더보기</a></div>
+          </div>
+        </div> -->
       </div><!--.con5-->
 
       <div class="con6">
@@ -325,68 +334,71 @@
           </div><!--.btn_box-->
         </div><!--.tit-->
         <div class="video">
-          <ul>
-            <li>
-              <div class="mv_img">
-                <a href="#"><img src="img/mv01.jpg" alt="뮤직비디오 썸네일"></a>
-                <span class="time">03 : 40</span>
-              </div><!--.mv_img-->
-              <div class="txt_box">
-                <a href="#">
-                  <strong>strawberry moon</strong><br>
-                  <span>아이유</span>
-                </a>
-              </div><!--.txt_box-->
-            </li>
-            <li>
-              <div class="mv_img">
-                <a href="#"><img src="img/mv02.jpg" alt="뮤직비디오 썸네일"></a>
-                <span class="time">03 : 40</span>
-              </div><!--.mv_img-->
-              <div class="txt_box">
-                <a href="#">
-                  <strong>LOOK</strong><br>
-                  <span>갓세븐</span>
-                </a>
-              </div><!--.txt_box-->
-            </li>
-            <li>
-              <div class="mv_img">
-                <a href="#"><img src="img/mv03.jpg" alt="뮤직비디오 썸네일"></a>
-                <span class="time">03 : 40</span>
-              </div><!--.mv_img-->
-              <div class="txt_box">
-                <a href="#">
-                  <strong>다섯번째 계절(SSFWL)</strong><br>
-                  <span>오마이걸</span>
-                </a>
-              </div><!--.txt_box-->
-            </li>
-            <li>
-              <div class="mv_img">
-                <a href="#"><img src="img/mv04.jpg" alt="뮤직비디오 썸네일"></a>
-                <span class="time">03 : 40</span>
-              </div><!--.mv_img-->
-              <div class="txt_box">
-                <a href="#">
-                  <strong>After School</strong><br>
-                  <span>위클리</span>
-                </a>
-              </div><!--.txt_box-->
-            </li>
-            <li>
-              <div class="mv_img">
-                <a href="#"><img src="img/mv05.jpg" alt="뮤직비디오 썸네일"></a>
-                <span class="time">03 : 40</span>
-              </div><!--.mv_img-->
-              <div class="txt_box">
-                <a href="#">
-                  <strong>Cry for me</strong><br>
-                  <span>트와이스</span>
-                </a>
-              </div><!--.txt_box-->
-            </li>
-          </ul>
+          <!-- Swiper -->
+          <div class="swiper mySwiper_mv">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide videoS">
+                <div class="mv_img">
+                  <a href="#"><img src="img/mv01.jpg" alt="뮤직비디오 썸네일"></a>
+                  <span class="time">03 : 40</span>
+                </div><!--.mv_img-->
+                <div class="txt_box">
+                  <a href="#">
+                    <strong>strawberry moon</strong><br>
+                    <span>아이유</span>
+                  </a>
+                </div><!--.txt_box-->
+              </div>
+              <div class="swiper-slide videoS">
+                <div class="mv_img">
+                  <a href="#"><img src="img/mv02.jpg" alt="뮤직비디오 썸네일"></a>
+                  <span class="time">03 : 40</span>
+                </div><!--.mv_img-->
+                <div class="txt_box">
+                  <a href="#">
+                    <strong>LOOK</strong><br>
+                    <span>갓세븐</span>
+                  </a>
+                </div><!--.txt_box-->
+              </div>
+              <div class="swiper-slide videoS">
+                <div class="mv_img">
+                  <a href="#"><img src="img/mv03.jpg" alt="뮤직비디오 썸네일"></a>
+                  <span class="time">03 : 40</span>
+                </div><!--.mv_img-->
+                <div class="txt_box">
+                  <a href="#">
+                    <strong>다섯번째 계절(SSFWL)</strong><br>
+                    <span>오마이걸</span>
+                  </a>
+                </div><!--.txt_box-->
+              </div>
+              <div class="swiper-slide videoS">
+                <div class="mv_img">
+                  <a href="#"><img src="img/mv04.jpg" alt="뮤직비디오 썸네일"></a>
+                  <span class="time">03 : 40</span>
+                </div><!--.mv_img-->
+                <div class="txt_box">
+                  <a href="#">
+                    <strong>After School</strong><br>
+                    <span>위클리</span>
+                  </a>
+                </div><!--.txt_box-->
+              </div>
+              <div class="swiper-slide videoS">
+                <div class="mv_img">
+                  <a href="#"><img src="img/mv05.jpg" alt="뮤직비디오 썸네일"></a>
+                  <span class="time">03 : 40</span>
+                </div><!--.mv_img-->
+                <div class="txt_box">
+                  <a href="#">
+                    <strong>Cry for me</strong><br>
+                    <span>트와이스</span>
+                  </a>
+                </div><!--.txt_box-->
+              </div>
+            </div>
+          </div>
         </div><!--.video-->
       </div><!--.con6-->      
     </div><!-- #container-->

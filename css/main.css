@@ -5,7 +5,7 @@ body{
 }
 #wrap{
   min-width: 320px;
-  max-width: 480px;
+  max-width: 375px;
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
@@ -134,10 +134,11 @@ font-size: 0;
   margin-left: 7px;
 }
 
+.new_list .newlistS{
+  justify-content: space-between;
+}
 .new_list .albumart{
-  /* float: left;
-  width: 55%;
-  margin-right: 5%; */
+  width: 45%;
   position: relative;
 }
 .new_list .albumart img{
@@ -153,12 +154,11 @@ font-size: 0;
   bottom: 5%; right: 5%;
 }
 .new_list .txt_box{
-  float: right;
-  width: 40%;
-  padding-top: 20px;
+  width: 48%;
+  text-align: left;
 }
 .new_list .txt_box .song_tit{
-  font-size: 24px;
+  font-size: 22px;
   display: -webkit-box;
   white-space: normal;
   overflow: hidden;
@@ -253,27 +253,20 @@ font-size: 0;
   background-image: url(../img/po_plus.png);
 }
 
-.con3 .mylist{
-  white-space: nowrap;
-  overflow-x: scroll;
-}
-.con3 .mylist li{
-  display: inline-block;
-  width: calc((100% - 30%) / 2);
-  margin-right: 5%;
-}
-.mylist li:last-child{
-  margin-right: 0;
+
+.mylistS{
+  flex-direction: column;
 }
 .mylist .multiart > div{
   float: left;
   width: 50%;
 }
-.mylist li img{
+.mylist img{
   width: 100%;
 }
 .mylist .txt_box{
   text-align: center;
+  margin-top: 10px;
 }
 .mylist .txt_box strong{
   display: block;
@@ -289,6 +282,7 @@ font-size: 0;
 #container > div.con4{
   margin-left: 0;
 }
+.con4 .tit{padding-left: 15px;}
 .con4 .tit a{
   font-size: 23px;
   font-weight: 400;
@@ -362,6 +356,9 @@ font-size: 0;
 #container > div.con5{
   margin-left: 0;
 }
+.con5::-webkit-scrollbar{
+  display: none;
+}
 .con5{
   white-space: nowrap;
   overflow-x: scroll;
@@ -409,24 +406,18 @@ font-size: 0;
   border-right: 1px solid #666;
   padding: 0 5px;
 }
-.con6 .video{
-  overflow-x: scroll;
-  white-space: nowrap;
-}
-.con6 .video li{
-  display: inline-block;
-  width: 85%;
-  margin-right: 5%;
+
+.con6 .videoS{
+  flex-direction: column;
 }
 .con6 .video .mv_img{
   position: relative;
-  /* width: 90%; */
   margin-bottom: 10px;
 }
 .con6 .video .mv_img a{
   display: block;
 }
-.con6 .video li img{
+.con6 .video img{
   width: 100%;
 }
 .video .mv_img .time{
@@ -518,7 +509,7 @@ footer{
 
 .player{
   background-color: #222;
-  max-width: 480px;
+  max-width: 375px;
   width: 100%;
   height: 80px;
   position: fixed;
