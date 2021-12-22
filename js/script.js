@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+  // nav
+  $(".open").click(function(){
+    $("nav").css({"left":"0"});
+  });
+  $(".menu_close").click(function(){
+    $("nav").css({"left":"-100%"})
+  });
+
   // new_list
   var swiper1 = new Swiper(".mySwiper_new", {
     slidesPerView: 1.2,
