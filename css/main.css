@@ -77,15 +77,57 @@ nav li a{
   border-bottom: 1px solid #f9afc0;
   font-weight: bolder;
 }
-
 nav .menu_close{
   width: 70px;
   height: 70px;
   background: url(../img/h_close.png) no-repeat center / 25px auto;
   position: absolute;
   top: 0; right: 0;
-  cursor: pointer;
 }
+
+.schbox{
+  background-color: #fff;
+  border: 1px solid #f9afc0;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 45px; left: 0;
+  z-index: 99;
+  text-align: center;
+  padding: 20px 0;
+  display: none;
+}
+.schbox .sch_close{
+  width: 50px;
+  height: 44px;
+  background: #fff url(../img/h_close.png) no-repeat center / 20px auto;
+  position: absolute;
+  top: -45px; right: 0;
+}
+.schbox .sch{
+  outline: none;
+  width: 230px;
+  height: 30px;
+  border: 0;
+  border-bottom: 1px dotted #f9afc0;
+  background-color: transparent;
+  padding-left: 10px;
+}
+.schbox .input{
+  position: relative;
+}
+.schbox .input .btn_sch{
+  width: 35px;
+  height: 30px;
+  background: url(../img/h_sch.png) no-repeat center / auto 30px;
+  position: absolute;
+  top: 0; right: 67px;
+}
+.schbox > p{
+  margin-top: 50px;
+  color: #777;
+}
+
 
 .present{
   padding: 0 15px;
@@ -159,7 +201,7 @@ font-size: 0;
   /* margin: 30px 15px; */
   margin: 30px 0 30px 15px;
 }
-.tit a{
+.tit h3 a{
   display: block;
   width: 130px;
   padding-bottom: 19px;
@@ -197,7 +239,7 @@ font-size: 0;
   text-align: left;
 }
 .new_list .txt_box .song_tit{
-  font-size: 22px;
+  font-size: 20px;
   display: -webkit-box;
   white-space: normal;
   overflow: hidden;
@@ -210,28 +252,26 @@ font-size: 0;
   width: 90%;
 }
 .new_list .txt_box .name{
-  font-size: 18px;
+  font-size: 16px;
   color: #666;
-  margin: 20px 0 10px;
+  margin: 20px 0 5px;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 90%;
 }
 .new_list .txt_box .date{
   font-size: 14px;
-  color: #aaa;
+  color: #ccc;
 }
 
 .po01 li{
+  width: 100%;
   margin-bottom: 12px;
-  height: calc((100% - 24px) / 3);
   position: relative;
+  display: flex;
 }
 .po01 li:last-child{
   margin-bottom: 0;
-}
-.po01 li > div{
-  float: left;
 }
 .po01 li .albumart{
   width: 20%;
@@ -249,31 +289,31 @@ font-size: 0;
   padding: 10px 10px 0;
 }
 .po01 .txt_box{
-  width: 45%;
+  width: 50%;
+  text-align: left;
 }
 .po01 .txt_box a{
   display: block;
 }
 .po01 .txt_box a.song_tit{
-  font-size: 18px;
+  font-size: 16px;
   color: #222;
   padding-top: 8px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 150px;
+  width: 179px;
+  font-weight: 400;
 }
 .po01 .txt_box a.name{
-  font-size: 16px;
+  font-size: 15px;
   color: #666;
 }
 .po01 .btn_box{
   width: 80px;
-  font-size: 0;
-  padding-top: 10px;
   text-align: center;
   position: absolute;
-  top: 0; right: 10px;
+  top: 0; right: 0;
 }
 .po01 .btn_box > button{
   display: inline-block;
@@ -332,11 +372,27 @@ font-size: 0;
 .con4 .tit strong{
   color: #ec5a5b;
 }
-.con4 .pick{
+.piWrap{
+  width: 100%;
+}
+.con4 .mySwiper_pick .pi01{
   background: url(../img/pi_bg.jpg) no-repeat center / cover;
   color: #fff;
   position: relative;
 }
+.mySwiper_pick .pick{
+  justify-content: left;
+  text-align: left;
+  color: #fff;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.mySwiper_pick .pick.pi01{background-image: url(../img/pi_bg.jpg);}
+.mySwiper_pick .pick.pi02{background-image: url(../img/pi_bg2.jpg);}
+.mySwiper_pick .pick.pi03{background-image: url(../img/pi_bg3.jpg);}
+
 .pick .txt_box{
   padding: 30px 0 0 35px;
 }
@@ -365,22 +421,14 @@ font-size: 0;
   position: absolute;
   top: 10%; right: 5%;
 }
-.pick .paging{
-  position: absolute;
-  bottom: 3%; left: 50%;
-  transform: translateX(-50%);
-}
-.pick .paging li{
-  float: left;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+.mySwiper_pick .swiper-pagination-bullet-active{
   background-color: #fff;
-  opacity: 0.4;
-  margin-right: 5px;
 }
-.pick .paging li.on{
-  opacity: 1;
+.swiper-horizontal > .swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, 
+.swiper-pagination-fraction{
+  bottom: 6px;
 }
 .pick > button{
   width: 70px;
@@ -624,16 +672,16 @@ footer{
   #wrap{
     min-width: 320px;
     max-width: 375px;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0 auto;
     overflow: hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     position: relative;
     background-color: #fff;
   }
-  #wrap::-webkit-scrollbar{
+  /* #wrap::-webkit-scrollbar{
     display: none;
-  }
+  } */
   nav{
     max-width: 375px;
     position: absolute;

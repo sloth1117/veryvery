@@ -7,8 +7,8 @@
   <title>VERYVERY</title>
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/swiper-bundle.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
   <link href="css/swiper.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="img/icon_veryvery.ico">
   <script src="js/jquery-1.12.3.js"></script>
@@ -17,450 +17,677 @@
 </head>
 <body>
   <div id="wrap">
-    <header>
-      <h1><a href="index.html" class="hidden">VERYVERY</a></h1>
-      <button type="button" class="open hidden">메뉴열기</button>
-      <button type="button" class="search hidden">검색</button>
-      <nav>
-        <div class="userinfo">
-          <a href="#">
-            <div class="userimg"><img src="img/pl01_4.jpg" alt=""></div>
-            <p class="username"><span>밤밤</span>님</p>
-          </a>
-        </div>
-        <ul>
-          <li><a href="#">새로 나온 노래</a></li>
-          <li><a href="#">많이 듣는 노래</a></li>
-          <li><a href="#">최근 들은 노래</a></li>
-          <li><a href="#">VERY's PICK</a></li>
-          <li><a href="#">장르 노래 모음</a></li>
-          <li><a href="#">추천 노래 모음</a></li>
-          <li><a href="#">다운 받은 노래</a></li>
-          <li><a href="#">플레이리스트</a></li>
-          <li><a href="#">VERYVERY 매거진</a></li>
-          <li><a href="#">영상</a></li>
-        </ul>
-        <button type="button" class="menu_close hidden">닫기</button>
-      </nav>
-    </header>
-
-    <div class="present">
-      <div class="txt_box">
-        <p class="sub_txt">베리가 추천하는</p>
-        <p class="date">10월 20일</p>
-        <h2>오늘의 음악 선물</h2>
-      </div><!--.txt_box-->
-      <div class="img_box">
-        <ul>
-          <li>
-            <div class="pf1"><img src="img/pr_singer02.jpg" alt="가수 프로필이미지"></div>
-          </li>
-          <li class="center">
+    <form action="">
+      <header>
+        <h1><a href="index.html" class="hidden">VERYVERY</a></h1>
+        <button type="button" class="open hidden">메뉴열기</button>
+        <button type="button" class="search hidden">검색</button>
+        <nav>
+          <div class="userinfo">
             <a href="#">
-              <div class="pf2"><img src="img/pr_singer01.jpg" alt="가수 프로필이미지"></div>
-             </a>
-          </li>
-          <li>
-            <div class="pf3"><img src="img/pr_singer03.jpg" alt="가수 프로필이미지"></div>
-          </li>
-        </ul>
-      </div><!--.img_box-->
-      <p class="mix_name"><span>오마이걸</span>, <span>갓세븐</span>, <span>aespa</span> 등</p>
-    </div><!--.present-->
-    
-    <div id="container">
-      <div class="con1">
-        <div class="tit">
-          <h3><a href="#"><span class="m_arr">새로 나온 노래</span></a></h3>
-        </div><!--.tit-->
-        <div class="new_list">
-          <!-- Swiper -->
-          <div class="swiper mySwiper_new">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide newlistS">
-                <div class="albumart radius15">
-                  <a href="#"><img src="img/new01.jpg" alt="앨범아트 이미지"></a>
-                </div>
-                <div class="txt_box">
-                  <p class="song_tit"><a href="#">Colorful</a></p>
-                  <p class="name"><a href="#">이민규</a></p>
-                  <p class="date">2021. 10. 20</p>
-                </div>
-              </div>
-              <div class="swiper-slide newlistS">
-                <div class="albumart radius15">
-                  <a href="#"><img src="img/new02.jpg" alt="앨범아트 이미지"></a>
-                </div>
-                <div class="txt_box">
-                  <p class="song_tit"><a href="#">지금 하늘 봐</a></p>
-                  <p class="name"><a href="#">이하늘</a></p>
-                  <p class="date">2021. 10. 20</p>
-                </div>
-              </div>
-              <div class="swiper-slide newlistS">
-                <div class="albumart radius15">
-                  <a href="#"><img src="img/new09.jpg" alt="앨범아트 이미지"></a>
-                </div>
-                <div class="txt_box">
-                  <p class="song_tit"><a href="#">Dreamcatcher</a></p>
-                  <p class="name"><a href="#">문완기</a></p>
-                  <p class="date">2021. 10. 20</p>
-                </div>
-              </div>
-              <div class="swiper-slide newlistS">
-                <div class="albumart radius15">
-                  <a href="#"><img src="img/new10.jpg" alt="앨범아트 이미지"></a>
-                </div>
-                <div class="txt_box">
-                  <p class="song_tit"><a href="#">너의 모든 게 사랑스러워</a></p>
-                  <p class="name"><a href="#">카페모카</a></p>
-                  <p class="date">2021. 10. 20</p>
-                </div>
-              </div>
-              <div class="swiper-slide newlistS">
-                <div class="albumart radius15">
-                  <a href="#"><img src="img/new05.jpg" alt="앨범아트 이미지"></a>
-                </div>
-                <div class="txt_box">
-                  <p class="song_tit"><a href="#">콜리</a></p>
-                  <p class="name"><a href="#">MC 스나이퍼(MC Sniper)</a></p>
-                  <p class="date">2021. 10. 20</p>
-                </div>
-              </div>
-              <div class="swiper-slide newlistS">
-                <div class="albumart radius15">
-                  <a href="#"><img src="img/new06.jpg" alt="앨범아트 이미지"></a>
-                </div>
-                <div class="txt_box">
-                  <p class="song_tit"><a href="#">떠났다</a></p>
-                  <p class="name"><a href="#">Crying Tigers</a></p>
-                  <p class="date">2021. 10. 20</p>
-                </div>
-              </div>
-              <div class="swiper-slide newlistS">
-                <div class="albumart radius15">
-                  <a href="#"><img src="img/new07.jpg" alt="앨범아트 이미지"></a>
-                </div>
-                <div class="txt_box">
-                  <p class="song_tit"><a href="#">이 순간</a></p>
-                  <p class="name"><a href="#">그들이 기획한</a></p>
-                  <p class="date">2021. 10. 20</p>
-                </div>
-              </div>
-            </div>
+              <div class="userimg"><img src="img/pl01_4.jpg" alt=""></div>
+              <p class="username"><span>밤밤</span>님</p>
+            </a>
           </div>
-        </div><!--.new_list-->
-      </div><!--.con1-->
-
-      <div class="con2">
-        <div class="tit">
-          <h3><a href="#"><span class="m_arr">많이 듣는 노래</span></a></h3>
-        </div><!--.tit-->
-        <div class="popular">
-          <div class="po01">
-            <ul>
-              <li class="clear">
-                <div class="albumart">
-                  <a href="#"><img src="img/po01.jpg" alt="앨범아트 이미지"></a>
-                </div><!--.albumart-->
-                <div class="ranking"><span>1</span></div>
-                <div class="txt_box">
-                  <a href="#" class="song_tit">strawberry moon12345</a>
-                  <a href="#" class="name">아이유(IU)</a>
-                </div><!--.txt_box-->
-                <div class="btn_box clear">
-                  <button type="button" class="play hidden">재생</button>
-                  <button type="button" class="plus hidden">추가</button>
-                </div><!--.btn_box-->
-              </li>
-              <li class="clear">
-                <div class="albumart">
-                  <a href="#"><img src="img/po02.jpg" alt="앨범아트 이미지"></a>
-                </div><!--.albumart-->
-                <div class="ranking"><span>2</span></div>
-                <div class="txt_box">
-                  <a href="#" class="song_tit">Savage</a>
-                  <a href="#" class="name">aespa</a>
-                </div><!--.txt_box-->
-                <div class="btn_box clear">
-                  <button type="button" class="play hidden">재생</button>
-                  <button type="button" class="plus hidden">추가</button>
-                </div><!--.btn_box-->
-              </li>
-              <li class="clear">
-                <div class="albumart">
-                  <a href="#"><img src="img/po03.jpg" alt="앨범아트 이미지"></a>
-                </div><!--.albumart-->
-                <div class="ranking"><span>3</span></div>
-                <div class="txt_box">
-                  <a href="#" class="song_tit">찬란한 계절</a>
-                  <a href="#" class="name">폴킴(Paul Kim)</a>
-                </div><!--.txt_box-->
-                <div class="btn_box clear">
-                  <button type="button" class="play hidden">재생</button>
-                  <button type="button" class="plus hidden">추가</button>
-                </div><!--.btn_box-->
-              </li>
-            </ul>
-          </div><!--.po01-->
-        </div><!--.popular-->
-      </div><!--.con2-->
-
-      <div class="con3">
-        <div class="tit">
-          <h3><a href="#"><span class="m_arr">최근 들은 노래</span></a></h3>
-        </div><!--.tit-->
-        <div class="mylist">
-          <!-- Swiper -->
-          <div class="swiper mySwiper_my">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide mylistS">
-                <div class="albumart radius15">
-                  <a href="#">
-                    <div class="multiart clear">
-                      <div><img src="img/pl01_1.jpg" alt="앨범아트 이미지"></div>
-                      <div><img src="img/pl01_2.jpg" alt="앨범아트 이미지"></div>
-                      <div><img src="img/pl01_3.jpg" alt="앨범아트 이미지"></div>
-                      <div><img src="img/pl01_4.jpg" alt="앨범아트 이미지"></div>
-                    </div>
-                  </a>
-                </div><!--.albumart-->
-                <div class="txt_box">
-                  <strong>My Playlist</strong>
-                  <span>132곡</span>
-                </div><!--.txt_box-->
-              </div>
-              <div class="swiper-slide mylistS">
-                <div class="albumart radius15">
-                  <a href="#"><img src="img/pl02.jpg" alt="앨범아트 이미지"></a>
-                </div><!--.albumart-->
-                <div class="txt_box">
-                  <strong>MUST</strong>
-                  <span><a href="#">2PM</a></span>
-                </div><!--.txt_box-->
-              </div>
-              <div class="swiper-slide mylistS">
-                <div class="albumart radius15">
-                  <a href="#"><img src="img/pl03.jpg" alt="앨범아트 이미지"></a>
-                </div><!--.albumart-->
-                <div class="txt_box">
-                  <strong>forever</strong>
-                  <span><a href="#">aespa</a></span>
-                </div><!--.txt_box-->
-              </div>
-              <div class="swiper-slide mylistS">
-                <div class="albumart radius15">
-                  <a href="#">
-                    <div class="multiart clear">
-                      <div><img src="img/pl05_1.jpg" alt="앨범아트 이미지"></div>
-                      <div><img src="img/pl05_2.jpg" alt="앨범아트 이미지"></div>
-                      <div><img src="img/pl05_3.jpg" alt="앨범아트 이미지"></div>
-                      <div><img src="img/pl05_4.jpg" alt="앨범아트 이미지"></div>
-                    </div>
-                  </a>
-                </div><!--.albumart-->
-                <div class="txt_box">
-                  <strong>idol list</strong>
-                  <span>37곡</span>
-                </div><!--.txt_box-->
-              </div>
-              <div class="swiper-slide mylistS">
-                <div class="albumart radius15">
-                  <a href="#">
-                    <div class="multiart clear">
-                      <div><img src="img/pl06_1.jpg" alt="앨범아트 이미지"></div>
-                      <div><img src="img/pl06_2.jpg" alt="앨범아트 이미지"></div>
-                      <div><img src="img/pl06_3.jpg" alt="앨범아트 이미지"></div>
-                      <div><img src="img/pl06_4.jpg" alt="앨범아트 이미지"></div>
-                    </div>
-                  </a>
-                </div><!--.albumart-->
-                <div class="txt_box">
-                  <strong>play1022</strong>
-                  <span>79곡</span>
-                </div><!--.txt_box-->
-              </div>
-            </div>
-          </div>
-        </div><!--.mylist-->
-      </div><!--.con3-->
-
-      <div class="con4">
-        <div class="tit">
-          <h3><a href="#"><span class="m_arr"><strong>VERY</strong>'s PICK</span></a></h3>
-        </div><!--.tit-->
-        <div class="pick">
-            <div class="txt_box">
-              <p class="list_name">가을 아침에<br>듣기 좋은 뉴에이지</p>
-              <span class="tag">#힐링</span>
-              <span class="tag">&#35;평화로운</span>
-              <span class="tag">#책읽기좋은</span>
-              <div class="song_tit">
-                <span>Refreshing</span>
-                <span>Suddenly</span>
-                <span>스쳐 지나가다</span></div>
-            </div><!--.txt_box-->
-            <div class="count">♬ 26</div>
-          <div class="paging">
-            <ul class="clear hidden">
-              <li class="on"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-            </ul>
-          </div><!--.paging-->
-          <button type="button" class="hidden">플레이리스트로 이동</button>
-        </div><!--.pick-->
-      </div><!--.con4-->
-
-      <div class="con5">
-        <div class="cate1">
           <ul>
-            <li><a href="#">국내 발라드</a></li>
-            <li><a href="#">국내 R&B</a></li>
-            <li><a href="#">국내 힙합</a></li>
-            <li><a href="#">클래식</a></li>
-            <li><a href="#">OST</a></li>
+            <li><a href="#">새로 나온 노래</a></li>
+            <li><a href="#">많이 듣는 노래</a></li>
+            <li><a href="#">최근 들은 노래</a></li>
+            <li><a href="#">VERY's PICK</a></li>
+            <li><a href="#">장르 노래 모음</a></li>
+            <li><a href="#">추천 노래 모음</a></li>
+            <li><a href="#">다운 받은 노래</a></li>
+            <li><a href="#">플레이리스트</a></li>
+            <li><a href="#">VERYVERY 매거진</a></li>
+            <li><a href="#">영상</a></li>
           </ul>
-        </div><!--.cate1-->
-        <div class="cate2">
-          <ul>
-            <li><a href="#">국내 댄스</a></li>
-            <li><a href="#">해외 R&B</a></li>
-            <li><a href="#">해외 힙합</a></li>
-            <li><a href="#">뉴에이지</a></li>
-            <li><a href="#" class="more">장르 더보기</a></li>
-          </ul>
-        </div><!--.cate2-->
-        <!-- Swiper -->
-        <!-- <div class="swiper mySwiper_cate">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="#">국내 발라드</a></div>
-            <div class="swiper-slide"><a href="#">국내 댄스</a></div>
-            <div class="swiper-slide"><a href="#">국내 R&B</a></div>
-            <div class="swiper-slide"><a href="#">해외 R&B</a></div>
-            <div class="swiper-slide"><a href="#">국내 힙합</a></div>
-            <div class="swiper-slide"><a href="#">해외 힙합</a></div>
-            <div class="swiper-slide"><a href="#">클래식</a></div>
-            <div class="swiper-slide"><a href="#">뉴에이지</a></div>
-            <div class="swiper-slide"><a href="#">OST</a></div>
-            <div class="swiper-slide"><a href="#" class="more">장르 더보기</a></div>
+          <button type="button" class="menu_close hidden">닫기</button>
+        </nav>
+        <div class="schbox">
+          <button type="button" class="sch_close hidden">닫기</button>
+          <div class="input">
+            <input type="text" class="sch" placeholder="검색어를 입력하세요">
+            <button type="button" class="btn_sch hidden">검색</button>
           </div>
-        </div> -->
-      </div><!--.con5-->
-
-      <div class="con6">
-        <div class="tit">
-          <h3><a href="#"><span class="m_arr">영상</span></a></h3>
-          <div class="btn_box">
-            <button type="button" class="new">최신</button>
-            <button type="button" class="pop">인기</button>
-          </div><!--.btn_box-->
-        </div><!--.tit-->
-        <div class="video">
-          <!-- Swiper -->
-          <div class="swiper mySwiper_mv">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide videoS">
-                <div class="mv_img">
-                  <a href="#"><img src="img/mv01.jpg" alt="뮤직비디오 썸네일"></a>
-                  <span class="time">03 : 40</span>
-                </div><!--.mv_img-->
-                <div class="txt_box">
-                  <a href="#">
-                    <strong>strawberry moon</strong><br>
-                    <span>아이유</span>
-                  </a>
-                </div><!--.txt_box-->
-              </div>
-              <div class="swiper-slide videoS">
-                <div class="mv_img">
-                  <a href="#"><img src="img/mv02.jpg" alt="뮤직비디오 썸네일"></a>
-                  <span class="time">03 : 40</span>
-                </div><!--.mv_img-->
-                <div class="txt_box">
-                  <a href="#">
-                    <strong>LOOK</strong><br>
-                    <span>갓세븐</span>
-                  </a>
-                </div><!--.txt_box-->
-              </div>
-              <div class="swiper-slide videoS">
-                <div class="mv_img">
-                  <a href="#"><img src="img/mv03.jpg" alt="뮤직비디오 썸네일"></a>
-                  <span class="time">03 : 40</span>
-                </div><!--.mv_img-->
-                <div class="txt_box">
-                  <a href="#">
-                    <strong>다섯번째 계절(SSFWL)</strong><br>
-                    <span>오마이걸</span>
-                  </a>
-                </div><!--.txt_box-->
-              </div>
-              <div class="swiper-slide videoS">
-                <div class="mv_img">
-                  <a href="#"><img src="img/mv04.jpg" alt="뮤직비디오 썸네일"></a>
-                  <span class="time">03 : 40</span>
-                </div><!--.mv_img-->
-                <div class="txt_box">
-                  <a href="#">
-                    <strong>After School</strong><br>
-                    <span>위클리</span>
-                  </a>
-                </div><!--.txt_box-->
-              </div>
-              <div class="swiper-slide videoS">
-                <div class="mv_img">
-                  <a href="#"><img src="img/mv05.jpg" alt="뮤직비디오 썸네일"></a>
-                  <span class="time">03 : 40</span>
-                </div><!--.mv_img-->
-                <div class="txt_box">
-                  <a href="#">
-                    <strong>Cry for me</strong><br>
-                    <span>트와이스</span>
-                  </a>
-                </div><!--.txt_box-->
-              </div>
-            </div>
-          </div>
-        </div><!--.video-->
-      </div><!--.con6-->      
-    </div><!-- #container-->
-
-    <footer>
-      <div class="f_top">
-        <a href="#" class="appdown">앱 설치</a>
-        <a href="#" class="go_top hidden">맨위로</a>
-      </div>
-      <div class="f_info">
-        <a href="#" class="login">로그인 / 회원가입</a>
-        <ul>
-          <li><a href="#">이용약관</a></li>
-          <li><a href="#">개인정보처리방침</a></li>
-          <li><a href="#">청소년보호정책</a></li>
-        </ul>
-        <a href="#" class="info">㈜ 베리베리 사업자 정보</a>
-        <p>ⓒVeryvery. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <div class="player">
-      <div class="playing clear">
-        <div class="albumart radius15">
-          <a href="#"><img src="img/mp_abart.jpg" alt="앨범아트 이미지"></a>
+          <p>지난 검색 기록이 없습니다.</p>
         </div>
+      </header>
+
+      <div class="present">
         <div class="txt_box">
-          <strong>Why</strong>
-          <span>온앤오프(ONF)</span>
+          <p class="sub_txt">베리가 추천하는</p>
+          <p class="date">10월 20일</p>
+          <h2>오늘의 음악 선물</h2>
         </div><!--.txt_box-->
-      </div><!--.playing-->
-      <div class="playbtn">
-        <button type="button" class="prev hidden">이전</button>
-        <button type="button" class="play hidden">재생/일시정지</button>
-        <button type="button" class="next hidden">다음</button>
-      </div><!--.playbtn-->
-      <button type="button" class="list_open hidden">플레이리스트 열기</button>
-    </div><!--.player-->
-    
+        <div class="img_box">
+          <ul>
+            <li>
+              <div class="pf1"><img src="img/pr_singer02.jpg" alt="가수 프로필이미지"></div>
+            </li>
+            <li class="center">
+              <a href="#">
+                <div class="pf2"><img src="img/pr_singer01.jpg" alt="가수 프로필이미지"></div>
+              </a>
+            </li>
+            <li>
+              <div class="pf3"><img src="img/pr_singer03.jpg" alt="가수 프로필이미지"></div>
+            </li>
+          </ul>
+        </div><!--.img_box-->
+        <p class="mix_name"><span>오마이걸</span>, <span>갓세븐</span>, <span>aespa</span> 등</p>
+      </div><!--.present-->
+      
+      <div id="container">
+        <div class="con1">
+          <div class="tit">
+            <h3><a href="#"><span class="m_arr">새로 나온 노래</span></a></h3>
+          </div><!--.tit-->
+          <div class="new_list">
+            <!-- Swiper -->
+            <div class="swiper mySwiper_new">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide newlistS">
+                  <div class="albumart radius15">
+                    <a href="#"><img src="img/new01.jpg" alt="앨범아트 이미지"></a>
+                  </div>
+                  <div class="txt_box">
+                    <p class="song_tit"><a href="#">Colorful</a></p>
+                    <p class="name"><a href="#">이민규</a></p>
+                    <p class="date">2021. 10. 20</p>
+                  </div>
+                </div>
+                <div class="swiper-slide newlistS">
+                  <div class="albumart radius15">
+                    <a href="#"><img src="img/new02.jpg" alt="앨범아트 이미지"></a>
+                  </div>
+                  <div class="txt_box">
+                    <p class="song_tit"><a href="#">지금 하늘 봐</a></p>
+                    <p class="name"><a href="#">이하늘</a></p>
+                    <p class="date">2021. 10. 20</p>
+                  </div>
+                </div>
+                <div class="swiper-slide newlistS">
+                  <div class="albumart radius15">
+                    <a href="#"><img src="img/new09.jpg" alt="앨범아트 이미지"></a>
+                  </div>
+                  <div class="txt_box">
+                    <p class="song_tit"><a href="#">Dreamcatcher</a></p>
+                    <p class="name"><a href="#">문완기</a></p>
+                    <p class="date">2021. 10. 20</p>
+                  </div>
+                </div>
+                <div class="swiper-slide newlistS">
+                  <div class="albumart radius15">
+                    <a href="#"><img src="img/new10.jpg" alt="앨범아트 이미지"></a>
+                  </div>
+                  <div class="txt_box">
+                    <p class="song_tit"><a href="#">너의 모든 게 사랑스러워</a></p>
+                    <p class="name"><a href="#">카페모카</a></p>
+                    <p class="date">2021. 10. 20</p>
+                  </div>
+                </div>
+                <div class="swiper-slide newlistS">
+                  <div class="albumart radius15">
+                    <a href="#"><img src="img/new05.jpg" alt="앨범아트 이미지"></a>
+                  </div>
+                  <div class="txt_box">
+                    <p class="song_tit"><a href="#">콜리</a></p>
+                    <p class="name"><a href="#">MC 스나이퍼(MC Sniper)</a></p>
+                    <p class="date">2021. 10. 20</p>
+                  </div>
+                </div>
+                <div class="swiper-slide newlistS">
+                  <div class="albumart radius15">
+                    <a href="#"><img src="img/new06.jpg" alt="앨범아트 이미지"></a>
+                  </div>
+                  <div class="txt_box">
+                    <p class="song_tit"><a href="#">떠났다</a></p>
+                    <p class="name"><a href="#">Crying Tigers</a></p>
+                    <p class="date">2021. 10. 20</p>
+                  </div>
+                </div>
+                <div class="swiper-slide newlistS">
+                  <div class="albumart radius15">
+                    <a href="#"><img src="img/new07.jpg" alt="앨범아트 이미지"></a>
+                  </div>
+                  <div class="txt_box">
+                    <p class="song_tit"><a href="#">이 순간</a></p>
+                    <p class="name"><a href="#">그들이 기획한</a></p>
+                    <p class="date">2021. 10. 20</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--.new_list-->
+        </div><!--.con1-->
+
+        <div class="con2">
+          <div class="tit">
+            <h3><a href="#"><span class="m_arr">많이 듣는 노래</span></a></h3>
+          </div><!--.tit-->
+          <div class="popular">
+            <!-- Swiper -->
+            <div class="swiper mySwiper_po">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide po01">
+                  <ul>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po01.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>1</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">strawberry moon</a>
+                        <a href="#" class="name">아이유(IU)</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po02.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>2</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">Savage</a>
+                        <a href="#" class="name">aespa</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po03.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>3</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">찬란한 계절</a>
+                        <a href="#" class="name">폴킴(Paul Kim)</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide po01">
+                  <ul>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po04.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>4</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">나의 첫사랑</a>
+                        <a href="#" class="name">다비치</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po05.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>5</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">색안경 (STEREOTYPE)</a>
+                        <a href="#" class="name">STAYC(스테이씨)</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po06.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>6</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">그래도 사랑이었잖아</a>
+                        <a href="#" class="name">거미</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide po01">
+                  <ul>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po07.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>7</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">싹둑 (Love Cut)</a>
+                        <a href="#" class="name">씨엔블루(CNBLUE)</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po08.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>8</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">Tamed-Dashed</a>
+                        <a href="#" class="name">ENHYPEN</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po09.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>9</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">사랑은 늘 도망가</a>
+                        <a href="#" class="name">임영웅</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide po01">
+                  <ul>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po10.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>10</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">신호등</a>
+                        <a href="#" class="name">이무진</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po11.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>11</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">Next Level</a>
+                        <a href="#" class="name">aespa</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po12.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>12</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">낙하 (with 아이유)</a>
+                        <a href="#" class="name">AKMU(악뮤)</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                  </ul>
+                </div>
+                <div class="swiper-slide po01">
+                  <ul>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po13.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>13</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">Queendom</a>
+                        <a href="#" class="name">Red Velvet (레드벨벳)</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po14.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>14</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">Weekend</a>
+                        <a href="#" class="name">태연(TAEYEON)</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                    <li class="clear">
+                      <div class="albumart">
+                        <a href="#"><img src="img/po15.jpg" alt="앨범아트 이미지"></a>
+                      </div><!--.albumart-->
+                      <div class="ranking"><span>15</span></div>
+                      <div class="txt_box">
+                        <a href="#" class="song_tit">시간을 거슬러 (낮에 뜨는 달 X 케이윌)</a>
+                        <a href="#" class="name">케이윌</a>
+                      </div><!--.txt_box-->
+                      <div class="btn_box clear">
+                        <button type="button" class="play hidden">재생</button>
+                        <button type="button" class="plus hidden">추가</button>
+                      </div><!--.btn_box-->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><!--.popular-->
+        </div><!--.con2-->
+
+        <div class="con3">
+          <div class="tit">
+            <h3><a href="#"><span class="m_arr">최근 들은 노래</span></a></h3>
+          </div><!--.tit-->
+          <div class="mylist">
+            <!-- Swiper -->
+            <div class="swiper mySwiper_my">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide mylistS">
+                  <div class="albumart radius15">
+                    <a href="#">
+                      <div class="multiart clear">
+                        <div><img src="img/pl01_1.jpg" alt="앨범아트 이미지"></div>
+                        <div><img src="img/pl01_2.jpg" alt="앨범아트 이미지"></div>
+                        <div><img src="img/pl01_3.jpg" alt="앨범아트 이미지"></div>
+                        <div><img src="img/pl01_4.jpg" alt="앨범아트 이미지"></div>
+                      </div>
+                    </a>
+                  </div><!--.albumart-->
+                  <div class="txt_box">
+                    <strong>My Playlist</strong>
+                    <span>132곡</span>
+                  </div><!--.txt_box-->
+                </div>
+                <div class="swiper-slide mylistS">
+                  <div class="albumart radius15">
+                    <a href="#"><img src="img/pl02.jpg" alt="앨범아트 이미지"></a>
+                  </div><!--.albumart-->
+                  <div class="txt_box">
+                    <strong>MUST</strong>
+                    <span><a href="#">2PM</a></span>
+                  </div><!--.txt_box-->
+                </div>
+                <div class="swiper-slide mylistS">
+                  <div class="albumart radius15">
+                    <a href="#"><img src="img/pl03.jpg" alt="앨범아트 이미지"></a>
+                  </div><!--.albumart-->
+                  <div class="txt_box">
+                    <strong>forever</strong>
+                    <span><a href="#">aespa</a></span>
+                  </div><!--.txt_box-->
+                </div>
+                <div class="swiper-slide mylistS">
+                  <div class="albumart radius15">
+                    <a href="#">
+                      <div class="multiart clear">
+                        <div><img src="img/pl05_1.jpg" alt="앨범아트 이미지"></div>
+                        <div><img src="img/pl05_2.jpg" alt="앨범아트 이미지"></div>
+                        <div><img src="img/pl05_3.jpg" alt="앨범아트 이미지"></div>
+                        <div><img src="img/pl05_4.jpg" alt="앨범아트 이미지"></div>
+                      </div>
+                    </a>
+                  </div><!--.albumart-->
+                  <div class="txt_box">
+                    <strong>idol list</strong>
+                    <span>37곡</span>
+                  </div><!--.txt_box-->
+                </div>
+                <div class="swiper-slide mylistS">
+                  <div class="albumart radius15">
+                    <a href="#">
+                      <div class="multiart clear">
+                        <div><img src="img/pl06_1.jpg" alt="앨범아트 이미지"></div>
+                        <div><img src="img/pl06_2.jpg" alt="앨범아트 이미지"></div>
+                        <div><img src="img/pl06_3.jpg" alt="앨범아트 이미지"></div>
+                        <div><img src="img/pl06_4.jpg" alt="앨범아트 이미지"></div>
+                      </div>
+                    </a>
+                  </div><!--.albumart-->
+                  <div class="txt_box">
+                    <strong>play1022</strong>
+                    <span>79곡</span>
+                  </div><!--.txt_box-->
+                </div>
+              </div>
+            </div>
+          </div><!--.mylist-->
+        </div><!--.con3-->
+
+        <div class="con4">
+          <div class="tit">
+            <h3><a href="#"><span class="m_arr"><strong>VERY</strong>'s PICK</span></a></h3>
+          </div><!--.tit-->
+          <div class="piWrap">
+            <!-- Swiper -->
+            <div class="swiper mySwiper_pick">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide pick pi01">
+                  <div class="txt_box">
+                    <p class="list_name">가을 아침에<br>듣기 좋은 뉴에이지</p>
+                    <span class="tag">&#35;힐링</span>
+                    <span class="tag">&#35;평화로운</span>
+                    <span class="tag">&#35;책읽기좋은</span>
+                    <div class="song_tit">
+                      <span>Refreshing</span>
+                      <span>Suddenly</span>
+                      <span>스쳐 지나가다</span></div>
+                  </div><!--.txt_box-->
+                  <div class="count">♬ 26</div>
+                  <button type="button" class="hidden">플레이리스트로 이동</button>
+                </div>
+                <div class="swiper-slide pick pi02">
+                  <div class="txt_box">
+                    <p class="list_name">아련하고 몽환적인<br>분위기에 빠지고 싶을때</p>
+                    <span class="tag">&#35;몽환적인</span>
+                    <span class="tag">&#35;아련한</span>
+                    <span class="tag">&#35;동화같은</span>
+                    <div class="song_tit">
+                      <span>부탁해</span>
+                      <span>지금 만나러갑니다</span>
+                      <span>다섯번째 계절</span></div>
+                  </div><!--.txt_box-->
+                  <div class="count">♬ 53</div>
+                  <button type="button" class="hidden">플레이리스트로 이동</button>
+                </div>
+                <div class="swiper-slide pick pi03">
+                  <div class="txt_box">
+                    <p class="list_name">비가 오면 머릿속에<br>떠오르는 그 곡</p>
+                    <span class="tag">&#35;슬픈</span>
+                    <span class="tag">&#35;차분한</span>
+                    <span class="tag">&#35;비내리는오후</span>
+                    <div class="song_tit">
+                      <span>비가 오는 날엔</span>
+                      <span>비도 오고 그래서</span>
+                      <span>Raindrop</span></div>
+                  </div><!--.txt_box-->
+                  <div class="count">♬ 32</div>
+                  <button type="button" class="hidden">플레이리스트로 이동</button>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div><!--.con4-->
+
+        <div class="con5">
+          <div class="cate1">
+            <ul>
+              <li><a href="#">국내 발라드</a></li>
+              <li><a href="#">국내 R&B</a></li>
+              <li><a href="#">국내 힙합</a></li>
+              <li><a href="#">클래식</a></li>
+              <li><a href="#">OST</a></li>
+            </ul>
+          </div><!--.cate1-->
+          <div class="cate2">
+            <ul>
+              <li><a href="#">국내 댄스</a></li>
+              <li><a href="#">해외 R&B</a></li>
+              <li><a href="#">해외 힙합</a></li>
+              <li><a href="#">뉴에이지</a></li>
+              <li><a href="#" class="more">장르 더보기</a></li>
+            </ul>
+          </div><!--.cate2-->
+          <!-- Swiper -->
+          <!-- <div class="swiper mySwiper_cate">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#">국내 발라드</a></div>
+              <div class="swiper-slide"><a href="#">국내 댄스</a></div>
+              <div class="swiper-slide"><a href="#">국내 R&B</a></div>
+              <div class="swiper-slide"><a href="#">해외 R&B</a></div>
+              <div class="swiper-slide"><a href="#">국내 힙합</a></div>
+              <div class="swiper-slide"><a href="#">해외 힙합</a></div>
+              <div class="swiper-slide"><a href="#">클래식</a></div>
+              <div class="swiper-slide"><a href="#">뉴에이지</a></div>
+              <div class="swiper-slide"><a href="#">OST</a></div>
+              <div class="swiper-slide"><a href="#" class="more">장르 더보기</a></div>
+            </div>
+          </div> -->
+        </div><!--.con5-->
+
+        <div class="con6">
+          <div class="tit">
+            <h3><a href="#"><span class="m_arr">영상</span></a></h3>
+            <div class="btn_box">
+              <button type="button" class="new">최신</button>
+              <button type="button" class="pop">인기</button>
+            </div><!--.btn_box-->
+          </div><!--.tit-->
+          <div class="video">
+            <!-- Swiper -->
+            <div class="swiper mySwiper_mv">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide videoS">
+                  <div class="mv_img">
+                    <a href="#"><img src="img/mv01.jpg" alt="뮤직비디오 썸네일"></a>
+                    <span class="time">03 : 40</span>
+                  </div><!--.mv_img-->
+                  <div class="txt_box">
+                    <a href="#">
+                      <strong>strawberry moon</strong><br>
+                      <span>아이유</span>
+                    </a>
+                  </div><!--.txt_box-->
+                </div>
+                <div class="swiper-slide videoS">
+                  <div class="mv_img">
+                    <a href="#"><img src="img/mv02.jpg" alt="뮤직비디오 썸네일"></a>
+                    <span class="time">03 : 40</span>
+                  </div><!--.mv_img-->
+                  <div class="txt_box">
+                    <a href="#">
+                      <strong>LOOK</strong><br>
+                      <span>갓세븐</span>
+                    </a>
+                  </div><!--.txt_box-->
+                </div>
+                <div class="swiper-slide videoS">
+                  <div class="mv_img">
+                    <a href="#"><img src="img/mv03.jpg" alt="뮤직비디오 썸네일"></a>
+                    <span class="time">03 : 40</span>
+                  </div><!--.mv_img-->
+                  <div class="txt_box">
+                    <a href="#">
+                      <strong>다섯번째 계절(SSFWL)</strong><br>
+                      <span>오마이걸</span>
+                    </a>
+                  </div><!--.txt_box-->
+                </div>
+                <div class="swiper-slide videoS">
+                  <div class="mv_img">
+                    <a href="#"><img src="img/mv04.jpg" alt="뮤직비디오 썸네일"></a>
+                    <span class="time">03 : 40</span>
+                  </div><!--.mv_img-->
+                  <div class="txt_box">
+                    <a href="#">
+                      <strong>After School</strong><br>
+                      <span>위클리</span>
+                    </a>
+                  </div><!--.txt_box-->
+                </div>
+                <div class="swiper-slide videoS">
+                  <div class="mv_img">
+                    <a href="#"><img src="img/mv05.jpg" alt="뮤직비디오 썸네일"></a>
+                    <span class="time">03 : 40</span>
+                  </div><!--.mv_img-->
+                  <div class="txt_box">
+                    <a href="#">
+                      <strong>Cry for me</strong><br>
+                      <span>트와이스</span>
+                    </a>
+                  </div><!--.txt_box-->
+                </div>
+              </div>
+            </div>
+          </div><!--.video-->
+        </div><!--.con6-->      
+      </div><!-- #container-->
+
+      <footer>
+        <div class="f_top">
+          <a href="#" class="appdown">앱 설치</a>
+          <a href="#" class="go_top hidden">맨위로</a>
+        </div>
+        <div class="f_info">
+          <a href="#" class="login">로그인 / 회원가입</a>
+          <ul>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">청소년보호정책</a></li>
+          </ul>
+          <a href="#" class="info">㈜ 베리베리 사업자 정보</a>
+          <p>ⓒVeryvery. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <div class="player">
+        <div class="playing clear">
+          <div class="albumart radius15">
+            <a href="#"><img src="img/mp_abart.jpg" alt="앨범아트 이미지"></a>
+          </div>
+          <div class="txt_box">
+            <strong>Why</strong>
+            <span>온앤오프(ONF)</span>
+          </div><!--.txt_box-->
+        </div><!--.playing-->
+        <div class="playbtn">
+          <button type="button" class="prev hidden">이전</button>
+          <button type="button" class="play hidden">재생/일시정지</button>
+          <button type="button" class="next hidden">다음</button>
+        </div><!--.playbtn-->
+        <button type="button" class="list_open hidden">플레이리스트 열기</button>
+      </div><!--.player-->
+    </form>
   </div><!-- #wrap -->
 </body>
 </html>
